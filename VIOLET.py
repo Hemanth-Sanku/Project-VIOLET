@@ -19,8 +19,6 @@ print("Hi.I'm VIOLET. A Smart ChatBot.")
 name=input("What is your name. ")
 print("Hi ",name)
 
-
-
 #LIBRARIES
 
 from datetime import date

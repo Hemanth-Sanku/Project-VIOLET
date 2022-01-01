@@ -1,0 +1,16 @@
+@SpecialConversations
+#Vote eliggibility
+#Age calculator
+
+@tools
+#Time and Date: Time, Date, Calander
+
+@MathSkills
+#Addition
+#Subtraction
+#Division
+#Multiplication
+
+@InternetSkills
+#YouTube videos downloader
+#Wikipedia

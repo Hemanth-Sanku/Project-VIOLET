@@ -19,6 +19,8 @@ print("Hi.I'm VIOLET. A Smart ChatBot.")
 name=input("What is your name. ")
 print("Hi ",name)
 
+
+
 #LIBRARIES
 
 from datetime import date
@@ -167,11 +169,11 @@ while True:
 
 #Speedtest
         
-    elif question in ['speedtest','speed test']:
+    elif question in ['speedtest','speed test',"do speedtest","do speed test"]:
           st=Speedtest()
           print("Checking your Download and Upload Speeds wait.....")
-          print("Your connection's Download Speed in Bytes:",st.download())
-          print("Your connection's Upload Speed in Bytes:",st.upload())
+          print("Your Download Speed is:",round((st.download()/1000000),2),"Mbps")
+          print("Your Upload Speed is:",round((st.upload()/1000000),2),"Mbps")
 
 #NewFeture
 

@@ -23,6 +23,8 @@ print("Hi ",name)
 
 #LIBRARIES
 
+import math
+
 from datetime import date
 date = date.today().strftime('%d/%m/%Y')
 
@@ -81,20 +83,20 @@ while True:
 
 #Features INFO
     elif question in ['what can you do','help','info','your abilities','your features','abilities','features']:
-        print("\nMy abilities: \n-Special Conversations:\n  1.Vote Eligibility.\n  2.Age Calculator.\n-Tools:\n  1.Time, date and Calander.\n-Math Skills:\n  1.Addition.\n  2.Subtraction.\n  3.Division.\n  4.Multiplication.\n-Internet Skills:\n  1.Youtube Video Downloader.\n  2.Internet Speedtest.\n")
+        print("\nMy abilities: \n-Special Conversations:\n 1.Vote Eligibility.\n 2.Age Calculator.\n-Tools:\n 1.Time, date and calendar.\n-Converter:\n 1.km to mile.\n 2.kg to lbs.\n 3.cm to m.\n 4.ft to cm.\n-Math Skills:\n 1.Addition.\n 2.Subtraction.\n 3.Division.\n 4.Multiplication.\n-Areas:\n 1.Area of circle.\n 2.Area of triangle.\n 3. Area of square.\n-PI Value.\n-Internet Skills:\n 1.Youtube Video Downloader.\n 2.Internet Speedtest.\n")
 
 
 
 #SKILLS AND TOOLS
 
-#Time, Date and Calander
+#Time, Date and Calendar
     elif question in ['what is the time now','time','what is the time now?','tell me the time now','tell me the time?','tell me the time']:
         print(time)
 
     elif question in ['what is the date today','date','what is the date tody?','what is the today date','tell me the date today','tell me the date?','tell me the date']:
         print("Today's date is -", date,".(dd/mm/YYYY)")
 
-    elif question in ['show calendar','calendar','cal','show me calendar']:
+    elif question in ['show Calendar','Calendar','cal','show me calendar']:
         yy=int(input("Which year: "))
         mm=int(input("Which month: "))
         print(calendar.month(yy,mm))
@@ -116,6 +118,36 @@ while True:
         b=int(input("Ok. Tell me in which year do you born: "))
         age=2021-b
         print("Your age now: ",age)
+
+
+
+#CONVERTER
+    elif question in ['converter','convert','open converter','unit converter']:
+      print("What do you want me to convert:\n1.km to mile\n2.kg to lbs\n3.cm to m\n4.ft to cm")
+      
+#1.km to mile
+    elif question in ['km to mile','km to mi','convert km to miles','convert km to mile', 'kms to miles']:
+      km=float(input("Enter no of km to convert: "))
+      mile=(km/1.609344)
+      print("Your km conversion to Miles:",round(mile,2),"miles.")
+#2.kg to lbs
+    elif question in ['kg to lbs','kg to lb','convert kg to lbs','convert kg to lb', 'kgs to lbs']:
+      kg=float(input("Enter no of kg to convert: "))
+      lbs=(kg*2.205)
+      print("Your kg conversion to lbs:",round(lbs,2),"lbs.")
+
+#3.cm to m
+    elif question in ['cm to m','cm to meter','convert cm to meter','convert cm to m', 'cm to meters']:
+      cm=float(input("Enter no of cm to convert: "))
+      meter=(cm/100)
+      print("Your cm conversion to meter:",round(meter,2),"meters.")
+
+#4.ft to cm
+    elif question in ['fts to cm','ft to cm','convert ft to cm','convert fts to cm', 'ft to cms']:
+      ft=float(input("Enter no of ft to convert: "))
+      cm=(ft*30.48)
+      print("Your ft conversion to cm:",round(cm,2),"cm.")
+
 
 
 
@@ -152,8 +184,32 @@ while True:
         b=int(input("Enter second value: "))
         mul=a*b
         print("Division is: ",mul)
+        
+#Areas
+        
+#1.Circle
+    elif question in ['area of circle','area of the circle','can you tell me area of circle','I want to know area of circle','circle']:
+          r=float(input("Enter the radius of Circle:"))
+          area=(math.pi*(r**2))
+          circumference=(2*math.pi*r)
+          print("Area of the Circle is=",round(area,2),"\nCircumference of Circle is=",round(circumference,2))
+          
+#2.Triangle
+    elif question in ['area of triangle','area of the triangle','can you tell me area of triangle','I want to know area of triangle','triangle']:
+          b=float(input("Enter the Base of triangle:"))
+          h=float(input("Enter the Height of triangle:"))
+          area=(1/2*(b*h))
+          print("Area of the triangle is=",round(area,2))
+#3.Square
+    elif question in ['area of square','area of the Square','can you tell me area of Square','I want to know area of Square','square']:
+          s=float(input("Enter the Base of Square:"))
+          area=(s**2)
+          print("Area of the Square is=",round(area,2))
 
-
+#PI Value
+    elif question in ['what is the pi value','pi value', 'whats the pi value','value of pi','pi']:
+          print(math.pi)
+          
 
 
 #INTERNET SKILLS
@@ -175,7 +231,6 @@ while True:
           print("Your Download Speed is:",round((st.download()/1000000),2),"Mbps")
           print("Your Upload Speed is:",round((st.upload()/1000000),2),"Mbps")
 
-#NewFeture
 
 
 #THE END

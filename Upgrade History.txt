@@ -1,2 +1,2 @@
 VIOLET Ver 2.0: Added Internet Features(Youtube Video Downloader).
-VIOLET Ver 3.0: Added Internet Features(Speedtest) and updated few conversations.
+VIOLET Ver 3.0: Added Internet Features (Speedtest), Math Skills(area of circle triangle square, pi value), Converter(km-mi kg-lb cm-m ft-cm) and updated few conversations.
